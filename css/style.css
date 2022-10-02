@@ -228,5 +228,21 @@ nav {display: none; }
 }
 
 @media (min-width: 600px) {
-    
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+    }
+
+    .section__title--about {
+        grid-column: title;
+    }
+
+    .about-me__img {
+        grid-row: 1 / -1;
+        grid-column: 2;
+    }
 }

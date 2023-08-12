@@ -489,13 +489,17 @@ header {
 
 /* Blog styles!! */
 
+.blog__body {
+    background-color: #bfbfbf;
+}
+
 .blog__intro {
     text-align: center;
-    background-color: var(--clr-accent);
+    background-color: #fffffff3;
     margin: 3% 5%;
 }
 
 .blog__card {
-    background-color: #dbdadadf;
+    background-color: #fffffff3;
     margin: 5% 10%;
 }

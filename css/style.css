@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #38fff5;
+    --clr-accent: #5298e8;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,7 +43,7 @@ html {
 
 body {
     background: var(--clr-light);
-    color: var(--clr-dark);
+    color: #000;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -385,6 +385,8 @@ header {
 
 /* My Work */
 
+/* #1 isnt staying centered, also when stacking theres no margin */
+
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -394,11 +396,14 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
 }
 
 .portfolio__item {
     background-color: var(--clr-accent);
+    background-size: cover;
     overflow: hidden;
+    max-width: max-content;
 }
 
 .portfolio__img {
@@ -484,3 +489,13 @@ header {
 
 /* Blog styles!! */
 
+.blog__intro {
+    text-align: center;
+    background-color: var(--clr-accent);
+    margin: 3% 5%;
+}
+
+.blog__card {
+    background-color: #dbdadadf;
+    margin: 5% 10%;
+}

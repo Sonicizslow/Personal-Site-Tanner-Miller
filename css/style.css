@@ -382,10 +382,39 @@ header {
     }
 }
 
+/* Certs */
+
+.certs {
+    background-color: var(--clr-accent);
+    text-align: center;
+}
+
+.certs h2{
+    position: relative;
+    margin-top: -50px;
+}
+
+.cert__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
+    justify-items: center;
+}
+
+.cert__img {
+    overflow: hidden;
+    max-width: max-content;
+    margin: 10px;
+}
+
+/* .certs__bar {
+    background-color: var(--clr-light);
+    padding: 10px;
+    margin: 25px;
+} */
 
 /* My Work */
 
-/* #1 isnt staying centered, also when stacking theres no margin */
 
 .my-work {
     background-color: var(--clr-dark);
@@ -397,13 +426,14 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     position: relative;
+    justify-items: center;
 }
 
 .portfolio__item {
     background-color: var(--clr-accent);
-    background-size: cover;
     overflow: hidden;
     max-width: max-content;
+    margin: 10px;
 }
 
 .portfolio__img {

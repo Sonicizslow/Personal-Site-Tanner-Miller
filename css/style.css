@@ -432,7 +432,7 @@ header {
 .portfolio__item {
     background-color: var(--clr-accent);
     overflow: hidden;
-    max-width: max-content;
+    max-width: fit-content;
     margin: 10px;
 }
 
